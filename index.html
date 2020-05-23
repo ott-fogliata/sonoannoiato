@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sonoannoiato.it</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<header>
+    <h1 id="todo"><span class="big">Ciao! :)</span><br/>Sei annoiato?</h1>
+</header>
+
+<div id="button" class="blobs-container">
+    <div class="blob white">Genera cose da fare</div>
+</div>
+
+<!--<div id="todo"></div>-->
+
+
+<script>
+
+    var lista=[
+        "Cucina una torta",
+        "Preparati uno spritz",
+        "Fai la lavatrice",
+        "Innaffia le piante",
+        "Fai il caffè a tua moglie",
+        "Vedi un horror",
+        "Guarda un film degli anni 50 ",
+        "Riguardati per l'ennesima volta Titanic",
+        "Sogna in grande",
+        "Leggi il diario segreto di tua sorella",
+        "Fai uno scherzo telefonico al tuo migliore amico",
+        "Iscriviti ad un corso di yoga online",
+        "Iscriviti ad un corso che hai sempre voluto fare",
+        "Guarda le stelle",
+        "Prova a fare il ritratto di qualcuno",
+        "Scrivi una poesia",
+        "Scrivi una lettera al te del futuro",
+        "Scrivi una lettera su questo momento",
+        // "Offrici un caffè",
+        "Fai una storia instagram",
+        "Fai la maschera ai capelli",
+        "Parla con tuo figlio/a compagna/o in modo sincero",
+        "Fatti una doccia, puzzi!",
+        "Depilati!",
+        "Fai streatching",
+        "Fai palestra con i tuoi amici sportivi su skype",
+        "Vai a correre",
+        "Fai una passeggiata al parco",
+        "Chiama una persona e dille la verità",
+        "Fai le melanzane alla parmigiana",
+        "Fai un collage di foto, buste, oggetti o quello che vuoi",
+        "Fai delle foto dalla tua finestra",
+        // "Leggi la differenza tra UX UI Service Design su google",
+        "Spolvera il lampadario",
+        "Taglia le unghie dei piedi",
+        "Fatti le sopracciglia",
+        "Dai da mangiare al gatto",
+        "Cucina una ricetta nuova",
+        "Balla",
+        "Bevi tanta acqua",
+        "Sorridi",
+        "Gara di rutti!",
+        "Esci a fare una passeggiata",
+        "Vai a lavare la macchina",
+        "Controlla la pressione delle ruote",
+        "Fai merenda",
+        "Gioca al pc",
+        "Gioca alla playstation",
+        "Ama.",
+        "Canta al karaoke",
+        "Fatti un sonnellino",
+        "Metti in ordine la libreria",
+        "Cancellati da Facebook",
+
+    ]
+
+    var todo = lista[Math.floor(Math.random() * lista.length)];
+    document.getElementById('todo').innerText = todo;
+
+    var element = document.getElementById('button');
+    element.addEventListener("click", function(e) {
+        window.location.reload();
+    }, false);
+
+</script>
+
+</body>
+</html>
